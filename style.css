@@ -9,7 +9,7 @@
 
 body {
     font-family: 'Popins';
-    background: #E5E5E5;
+    background: #f7f5f5;
 }
 
 
@@ -117,7 +117,7 @@ header {
 }
 
 .portfolio1 {
-    margin: 30px;
+    margin: 40px;
     padding: 30px;
     display: flex;
     gap: 12px;
@@ -142,7 +142,7 @@ header {
 .project-title h2 {
     font-family: 'Poppins';
     font-weight: 700;
-    font-size: 30px;
+    font-size: 32px;
     line-height: 44px;
     color: #172B4D;
 }
@@ -160,9 +160,53 @@ header {
     line-height: 20px;
 }
 
-.project-1 .outline span {
-    background-color: grey;
+.project-1 .outline .dev {
+    color: #7A869A;
+}
+
+.project-1 .outline .dot {
+    height: 10px;
+    width: 10px;
+    margin-top: 5px;
+    background-color: #C1C7D0;
     border-radius: 100%;
+}
+
+.project-1 p {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.project-1 .tags {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.project-1 .tags .skill {
+    background: #EBEBFF;
+    padding: 10px;
+    border-radius: 5px;
+    color: #6070FF;
+}
+
+.project-1 .action .btn {
+    padding: 10px;
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: 500;
+    color: #6070FF;
+    background-color: #fff;
+    border: 1px solid #6070FF;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.project-1 .action .btn:hover {
+    background-color: #6070FF;
+    color: #fff;
+    transition: all 0.8s ease;
 }
 
 

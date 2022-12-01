@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: 'Popins';
+    font-family: 'Poppins';
     background: #f7f5f5;
 }
 
@@ -43,7 +43,6 @@ header {
 
 .navbar .logo {
     color: #6070FF;
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -61,61 +60,69 @@ header {
 
 .container {
     background: url(./images/header-shapes\ mobile@2x.svg);
-    width: 100%;
-    height: 100vh;
     background: cover;
     background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
     margin: 0 10%;
 }
 
 
-/* ─── Container Personal-info ────────────────────────────────────────────── */
+/* ─── Personal-info ────────────────────────────────────────────── */
 
 .personal-info {
     padding-top: 25%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding-right: 25px;
 }
 
 .personal-info h2 {
     padding: 10px 35px;
     color: #172B4D;
-    font-family: 'Poppins';
     font-weight: 700;
     font-size: 40px;
     line-height: 50px;
 }
 
 .personal-info p {
-    padding: 0 35px;
-    font-family: 'Poppins';
+    padding: 0px 35px;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.personal-info .socail-media {
+    padding: 10px 0px 0px 30px;
 }
 
 .socail-media h3 {
-    padding: 10px 35px;
     color: #7F8CFF;
     text-transform: uppercase;
-    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 0px 15px;
 }
 
 
-/* ─── Container Social-Media ─────────────────────────────────────────────── */
+/* ─── Social-Media ─────────────────────────────────────────────── */
 
-.social-icon {
+.socail-media .social-icon {
     display: flex;
-    justify-items: center;
+    justify-items: flex-start;
     align-items: center;
-    padding-left: 30px;
 }
 
 .social-icon li {
     padding: 10px;
 }
+
+
+/* ─── Portfolio ──────────────────────────────────────────────────────────── */
 
 .container-portfolio {
     margin: 40px;
@@ -145,7 +152,6 @@ header {
 }
 
 .project-title h2 {
-    font-family: 'Poppins';
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
@@ -159,7 +165,6 @@ header {
 }
 
 .project-1 .outline li {
-    font-family: 'Poppins';
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
@@ -178,7 +183,6 @@ header {
 }
 
 .project-1 p {
-    font-family: 'Poppins';
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
@@ -196,9 +200,8 @@ header {
     color: #6070FF;
 }
 
-.project-1 .action .btn {
+.action .btn {
     padding: 10px;
-    font-family: 'Poppins';
     font-size: 15px;
     font-weight: 500;
     color: #6070FF;
@@ -208,10 +211,97 @@ header {
     cursor: pointer;
 }
 
-.project-1 .action .btn:hover {
+.action .btn:hover {
     background-color: #6070FF;
     color: #fff;
     transition: all 0.8s ease;
+}
+
+
+/* ─── About Myself ───────────────────────────────────────────────────────── */
+
+.about-myself {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+
+.about-info h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    padding: 0px 50px 10px 0px;
+}
+
+.about-info p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+}
+
+.about-info .action {
+    padding-top: 20px;
+}
+
+.about-info .languages {
+    margin: 30px 0px 30px;
+}
+
+.about-info .languages h3 {
+    padding: 20px 0px 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.about-info .languages .lang-tag {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-info .languages .lang-tag span {
+    background-color: #f2f2f7;
+    border-radius: 8px;
+    padding: 20px 0px 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.about-info .languages .lang-tag span h3 {
+    padding: 10px 10px;
+}
+
+.about-info .languages .lang-tag span img {
+    padding: 0px 10px 0px 10px;
+    width: 66px;
+}
+
+.about-info .others {
+    padding: 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.others a {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+.others .framework {
+    font-weight: 500;
+    size: 20px;
+    line-height: 25px;
 }
 
 
@@ -238,11 +328,11 @@ header {
         margin: 0 25px;
     }
     .container {
-        width: 100vw;
-        height: 100vh;
         background: url(./images/Header-bg.svg);
         background-repeat: no-repeat;
         background: cover;
+        width: 100vw;
+        height: 100vh;
         margin: 0 15% !important;
     }
 }

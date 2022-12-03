@@ -201,7 +201,7 @@ header {
 }
 
 .action .btn {
-    padding: 10px;
+    padding: 18px;
     font-size: 15px;
     font-weight: 500;
     color: #6070FF;
@@ -221,11 +221,14 @@ header {
 /* ─── About Myself ───────────────────────────────────────────────────────── */
 
 .about-myself {
-    padding: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #fff;
+}
+
+.about-info {
+    padding: 60px;
 }
 
 .about-info h2 {
@@ -302,6 +305,67 @@ header {
     font-weight: 500;
     size: 20px;
     line-height: 25px;
+}
+
+
+/* ─── Contact-me Form ────────────────────────────────────────────────────── */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    background: #6070FF;
+    border-radius: 80px 0px 0px 0px;
+    padding: 50px 0px 50px;
+    /* top: 5000px; */
+}
+
+.contact .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.contact-info h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #FFF;
+    padding: 20px;
+}
+
+.contact-info p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #EBEBFF;
+    padding: 8px;
+    text-align: center;
+}
+
+.contact .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.contact-form input[type="text"],
+input[type="email"],
+textarea {
+    border-radius: 9px;
+    padding: 14px 8px 14px;
+    border: none;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 

@@ -10,6 +10,7 @@
 body {
     font-family: 'Poppins';
     background: #f7f5f5;
+    overflow: auto;
 }
 
 
@@ -59,12 +60,11 @@ header {
 /* ─── Header Container ───────────────────────────────────────────────────── */
 
 .container {
-    background: url(./images/header-shapes\ mobile@2x.svg);
-    background: cover;
+    background-image: url(./images/header-shapes\ mobile@2x.svg);
+    background-size: contain;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
-    margin: 0 10%;
 }
 
 
@@ -311,12 +311,15 @@ header {
 /* ─── Contact-me Form ────────────────────────────────────────────────────── */
 
 .contact {
+    margin-top: 8rem;
     display: flex;
     flex-direction: column;
     background: #6070FF;
     border-radius: 80px 0px 0px 0px;
-    padding: 50px 0px 50px;
-    /* top: 5000px; */
+    padding: 40px 0px 40px;
+    background-image: url('./images/contact-form-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 .contact .contact-info {
@@ -324,48 +327,48 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 30px;
 }
 
 .contact-info h2 {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 50px;
     color: #FFF;
     padding: 20px;
 }
 
 .contact-info p {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 28px;
     color: #EBEBFF;
-    padding: 8px;
+    padding: 5px;
     text-align: center;
 }
 
 .contact .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
+    gap: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .contact-form input[type="text"],
 input[type="email"],
 textarea {
     border-radius: 9px;
-    padding: 14px 8px 14px;
+    padding: 12px 7px 12px;
     border: none;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .contact-form textarea {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
 }
 
 
